@@ -73,7 +73,6 @@ exports.logout = catchAsync(async (req, res, next) => {
 exports.protect = catchAsync(async (req, res, next) => {
   // getting the token from the clien side
   let token;
-  //   console.log(req.headers);
   if (
     req.headers.authorization &&
     req.headers.authorization.startsWith('Bearer')

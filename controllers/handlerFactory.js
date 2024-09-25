@@ -79,7 +79,7 @@ exports.getAll = (Model) =>
         data: doc,
       },
     });
-    // console.log(tours)
+
     // const tours = await Tour.find()
     //   .where('duration')
     //   .equals(5)

@@ -128,15 +128,6 @@ tourSchema.pre(/^find/, function (next) {
 tourSchema.index({ price: 1, ratingsAverage: -1 });
 tourSchema.index({ slug: 1 });
 tourSchema.index({ startLocation: '2dsphere' });
-// tourSchema.pre('save',function(next){
-//   console.log('hello from the second middleWare');
-//   next();
-// })
-
-// tourSchema.post('save',function(doc,next){
-//   console.log(doc);
-//   next();
-// })
 
 tourSchema.virtual('duratoinWeeks').get(function () {
   return this.duration / 7;

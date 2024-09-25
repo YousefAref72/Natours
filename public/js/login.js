@@ -26,7 +26,7 @@ export const logout = async () => {
       method: 'GET',
       url: 'http://127.0.0.1:3000/api/v1/users/logout',
     });
-    console.log(2222);
+
     if (res.status === 200) {
       location.assign('/');
       setTimeout(() => {

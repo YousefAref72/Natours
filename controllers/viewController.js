@@ -22,7 +22,7 @@ exports.getTour = catchAsync(async (req, res) => {
   if (!tour) {
     throw new AppError('There is no such a tour with that name', 404);
   }
-  // console.log(tour[0].locations);
+
   res.status(200).render('tour', {
     title: tour.name,
     tour,

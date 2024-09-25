@@ -34,7 +34,7 @@ module.exports = class Email {
       url:this.url,
       subject
     })
-    console.log(html)
+
     //2) Defining the mail options
     const emailOptions = {
       from: this.from,
